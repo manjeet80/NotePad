@@ -1,38 +1,129 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-div {
+  min-height: 97vh;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.header {
+  display: flex;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+  background-color: grey;
+  color: black;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 5px 15px;
+  font-size: 1rem;
+}
+.note-icon {
+  padding: 10px 15px;
+
+  color: black;
+  font-size: 5px;
+  cursor: pointer;
+}
+footer {
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+footer p {
+  position: absolute;
+
+  bottom: 0;
+}
+.main-note form {
+  width: 300px;
+  height: 18vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: auto;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-top: 1rem;
+  border-radius: 1rem;
+}
+
+#title {
+  border: none;
+  color: grey;
+  font-size: 1em;
+  padding: 5px;
+  font-weight: 600;
+  outline-style: none;
+  border-radius: 5px;
+}
+#textarea {
+  border: none;
+  color: grey;
+  font-size: 1rem;
+  padding: 5px;
+  font-weight: 400;
+  outline-style: none;
+  margin: 1rem;
+  border-radius: 5px;
+  position: relative;
+}
+.btn-plus {
+  background-color: transparent;
+  border: none;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.plus-sign {
+  background-color: white;
+  color: yellowgreen;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.plus-sign:hover {
+  padding: 3px;
+  border-radius: 50%;
+  color: yellowgreen;
+  background-color: white;
+}
+.notes {
+  width: 250px;
+
+  height: 20vh;
+  background-color: whitesmoke;
+  margin: 3rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.notes h1 {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: grey;
+}
+.notes p {
+  color: grey;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.btn {
+  width: 50px;
+  border: none;
+  float: right;
+  background-color: transparent;
+  color: yellowgreen;
+  align-self: flex-end;
+  cursor: pointer;
+}
+.btn :hover {
+  padding: 3px;
+  border-radius: 50%;
+  background-color: white;
+}
+.container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
 }
